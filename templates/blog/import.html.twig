@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<form method="post" enctype="multipart/form-data">
+  <fieldset>
+    <legend>CSV Import</legend>
+   
+    <div class="form-group">
+    <input type="file" class="form-control-file" name="import-csv" aria-describedby="fileHelp">     
+    </div>
+     
+        <button type="submit" class="btn btn-primary" name="import" value="Import-Data" >Importer</button>
+    </fieldset>
+</form>
+
+{% endblock %}
